@@ -1,0 +1,57 @@
+import java.util.*;
+
+public class App {
+    
+    public static void main(String[] args) {
+        Queue<String> Classmates = new LinkedList<>();  ;
+
+        System.out.print("\n=========================================================== \n");
+        Classmates.add("Laureano");
+        Classmates.add("Bolanos");
+        Classmates.add("Tenerife");
+        Classmates.add("Legaspi");
+        Classmates.add("Natividad");
+
+
+        System.out.println(Classmates);
+        
+        //Get the size of the queue
+        System.out.print("Size: ");
+        System.out.println(Classmates.size());
+
+        // Get the front of the queue
+        System.out.print("Front: ");
+        System.out.println(Classmates.peek());
+
+        //Dequeue 5 of your classmate
+        Classmates.remove();
+        Classmates.remove();
+        Classmates.remove();
+        Classmates.remove();
+        Classmates.remove();
+        
+        System.out.println("\n=========================================================== \n");
+        System.out.println("UPDATED LIST \n");
+        
+        //Enqueue another 5 of you classmates
+        Classmates.add("Bablis");
+        Classmates.add("Cinco");
+        Classmates.add("Dapitillo");
+        Classmates.add("Adia");
+        Classmates.add("Magno");
+
+        System.out.println(Classmates);
+
+
+        // Get the size of the queue
+        System.out.println("Size: " + Classmates.size());
+
+        // Get the front of the queue
+        System.out.println("Front: " + Classmates.peek());
+
+        System.out.print("\n");
+        
+
+    }
+}
+ 
